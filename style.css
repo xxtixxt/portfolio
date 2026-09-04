@@ -14,6 +14,7 @@ body {
     background:#050b18;
     color:white;
     font-family:Arial, Helvetica, sans-serif;
+    overflow-x:hidden;
 }
 
 
@@ -24,6 +25,7 @@ header {
     position:absolute;
     top:0;
     left:0;
+
     width:100%;
 
     display:flex;
@@ -37,19 +39,24 @@ header {
 }
 
 
+
 .logo {
 
     font-size:24px;
+    line-height:1.4;
     letter-spacing:8px;
-    line-height:1.2;
 
 }
+
 
 
 nav {
+
     display:flex;
-    gap:40px;
+    gap:50px;
+
 }
+
 
 
 nav a {
@@ -57,7 +64,7 @@ nav a {
     color:white;
     text-decoration:none;
 
-    font-size:15px;
+    font-size:16px;
     letter-spacing:2px;
 
 }
@@ -70,8 +77,11 @@ nav a {
 
 .hero {
 
-    height:100vh;
     position:relative;
+
+    width:100%;
+    height:100vh;
+
     overflow:hidden;
 
 }
@@ -82,6 +92,9 @@ nav a {
 
     position:absolute;
 
+    top:0;
+    left:0;
+
     width:100%;
     height:100%;
 
@@ -91,69 +104,83 @@ nav a {
 
 
 
+
 .overlay {
 
     position:absolute;
 
     inset:0;
 
+
     background:
     linear-gradient(
     90deg,
-    rgba(0,10,30,.85),
-    rgba(0,20,50,.45)
+    rgba(3,8,25,.75),
+    rgba(3,8,25,.25)
     );
 
 }
 
 
 
-.hero-content {
+
+
+.hero-text {
 
     position:absolute;
 
     top:50%;
-    left:8%;
+    left:7%;
 
     transform:translateY(-50%);
 
-}
-
-
-
-.small-title {
-
-    color:#4da3ff;
-
-    letter-spacing:5px;
-
-    margin-bottom:30px;
+    max-width:900px;
 
 }
 
 
 
-h1 {
+.label {
 
-    font-size:clamp(45px,6vw,90px);
+    color:#3b82f6;
 
-    font-weight:600;
+    font-size:18px;
+
+    letter-spacing:7px;
+
+    margin-bottom:35px;
+
+}
+
+
+
+
+.hero-text h1 {
+
+
+    font-size:clamp(45px,5vw,78px);
 
     line-height:1.05;
 
+    font-weight:600;
+
+    letter-spacing:-2px;
+
 }
 
 
 
-.categories {
+.hero-text p {
 
-    margin-top:40px;
 
-    letter-spacing:5px;
+    margin-top:45px;
 
     font-size:14px;
 
+    letter-spacing:8px;
+
 }
+
 
 
 
@@ -161,9 +188,9 @@ h1 {
 /* SECTIONS */
 
 
-section:not(.hero){
+section:not(.hero) {
 
-    padding:120px 8%;
+    padding:120px 7%;
 
 }
 
@@ -173,7 +200,7 @@ h2 {
 
     font-size:55px;
 
-    letter-spacing:5px;
+    letter-spacing:8px;
 
     margin-bottom:50px;
 
@@ -183,70 +210,90 @@ h2 {
 
 section p {
 
-    max-width:700px;
+    max-width:750px;
+
+    color:#b8c5dc;
 
     font-size:24px;
 
     line-height:1.6;
 
-    color:#b9c7dd;
-
 }
 
 
 
 
-/* CARDS */
+.work {
 
+    border-top:1px solid rgba(255,255,255,.2);
 
-.card {
-
-    border:1px solid rgba(77,163,255,.3);
-
-    padding:40px;
-
-    margin-bottom:30px;
-
-    background:#081426;
+    padding:40px 0;
 
 }
 
 
 
-.card h3 {
+.work h3 {
+
+    font-size:35px;
 
     margin:20px 0;
 
-    font-size:30px;
-
 }
 
 
 
 
+@media(max-width:700px){
 
-button {
 
-    margin-top:40px;
+header {
 
-    padding:20px 50px;
-
-    background:#1e90ff;
-
-    border:none;
-
-    color:white;
-
-    font-size:16px;
-
-    letter-spacing:3px;
+padding:30px;
 
 }
+
+
+
+.logo {
+
+font-size:18px;
+
+}
+
+
+
+nav {
+
+gap:20px;
+
+}
+
+
+
 nav a {
-    color:white !important;
-    text-decoration:none;
+
+font-size:12px;
+
 }
 
-nav a:hover {
-    color:#3b82f6 !important;
+
+
+.hero-text {
+
+left:30px;
+right:30px;
+
+}
+
+
+
+.hero-text h1 {
+
+font-size:42px;
+
+}
+
+
+
 }
