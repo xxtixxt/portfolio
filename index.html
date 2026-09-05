@@ -1,110 +1,189 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ANYA AI VISUALS</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
 
 
-body {
-    background: #050816;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-}
+<body>
 
 
-/* HERO */
+<header>
 
-.hero {
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-
-/* VIDEO */
-
-.bg-video {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-}
+<div class="logo">
+ANYA<br>
+AI<br>
+VISUALS
+</div>
 
 
-/* DARK OVERLAY */
-
-.overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(5,8,22,0.55);
-    z-index: 2;
-}
+<nav>
+<a href="#works">Работы</a>
+<a href="#about">Обо мне</a>
+<a href="#contact">Контакты</a>
+</nav>
 
 
-/* HEADER */
-
-header {
-    position: relative;
-    z-index: 3;
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 60px;
-}
+</header>
 
 
-.logo {
-    font-size: 24px;
-    line-height: 1.4;
-    letter-spacing: 8px;
-    font-weight: 300;
-}
+
+<section class="hero">
 
 
-nav {
-    display: flex;
-    gap: 60px;
-}
+<video autoplay muted loop playsinline class="hero-video">
+
+<source src="hero4.mp4" type="video/mp4">
+
+</video>
 
 
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    letter-spacing: 2px;
-}
+<div class="overlay"></div>
 
 
-/* CENTER TEXT */
 
-.content {
-    position: relative;
-    z-index: 3;
-    margin-top: 170px;
-    padding-left: 60px;
-}
+<div class="hero-text">
+
+<div class="label">
+AI VISUAL CREATOR
+</div>
 
 
-.label {
-    color: #5278ff;
-    font-size: 20px;
-    letter-spacing: 8px;
-    margin-bottom: 40px;
-}
+<h1>
+визуальные истории<br>
+кино,<br>
+мода и ИИ
+</h1>
 
 
-h1 {
-    font-size: clamp(45px, 6vw, 90px);
-    line-height: 1.05;
-    font-weight: 700;
-    letter-spacing: -2px;
-}
+<p>
+Fashion • AI Films • Digital Visuals
+</p>
 
 
-p {
-    margin-top: 45px;
-    font-size: 18px;
-    letter-spacing: 8px;
-    color: #c8cde0;
-}
+</div>
+
+
+</section>
+
+
+
+
+<section id="about">
+
+
+<h2>
+обо мне
+</h2>
+
+
+<p>
+я создаю визуальные концепции,
+рекламные видео и цифровые образы
+с помощью искусственного интеллекта.
+<br><br>
+
+соединяю эстетику кино,
+моду и современные технологии.
+</p>
+
+
+</section>
+
+
+
+
+
+<section id="works">
+
+
+<h2>
+ИЗБРАННЫЕ РАБОТЫ
+</h2>
+
+
+
+<div class="work">
+
+<span>01</span>
+
+<h3>
+AI FASHION FILM
+</h3>
+
+<p>
+кинематографичные визуальные истории
+</p>
+
+</div>
+
+
+
+<div class="work">
+
+<span>02</span>
+
+<h3>
+PRODUCT VISUALS
+</h3>
+
+<p>
+AI-реклама и визуальные концепции
+</p>
+
+</div>
+
+
+
+<div class="work">
+
+<span>03</span>
+
+<h3>
+DIGITAL WORLDS
+</h3>
+
+<p>
+создание новых визуальных миров
+</p>
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+<section id="contact">
+
+
+<h2>
+сотрудничество
+</h2>
+
+
+<p>
+открыта к интересным проектам
+и визуальным экспериментам.
+</p>
+
+
+</section>
+
+
+
+
+</body>
+
+</html>
